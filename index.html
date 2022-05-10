@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="shortcut icon" href="./assets/key.png" type="image/x-icon">
+    <title>Gerador de senhas</title>
+</head>
+<body>
+       <h1>Gerador de Senhas</h1> 
+
+<main class="container-input">
+    <span>Tamanho <span id="valor"></span> Carecteres</span>
+    <input id="slider" class="slider" type="range" min="5" max="25" value="15"/>
+    <button id="button" class="button-cta"   onclick=" generetePassword()">Gerar senha</button>
+</main>
+                     
+                  <div id="container-password"  onclick="copyPassword()" class="container-password hide">
+                      <span class="title">Sua senha gerada foi:</span>
+                      <span id="password" class="password"></span>
+                      <span class="tooltip">Clique na senha para copiar.🎈</span>
+                  </div>
+    <Script src="./script.js"></Script>
+
+</body>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+
+    <footer>
+        <div class="rounded-social-buttons">
+                          <a class="social-button facebook" href="https://www.facebook.com/profile.php?id=100074292352492" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                          <a class="social-button twitter" href="https://twitter.com/pngmatheuss/" target="_blank"><i class="fab fa-twitter"></i></a>
+                          <a class="social-button linkedin" href="https://www.linkedin.com/in/ferreira21/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                          <a class="social-button youtube" href="https://github.com/tagliaferro12/" target="_blank"><i class="fab fa-github"></i></a>
+                          <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                      </div>
+
+                    <div class="copy">
+                        <p>copyright &copy; 2022 Desenvolvido por <span>Matheus Ferreira Souza</span></p>
+                    </div>
+      </footer>
+ 
+</html>
